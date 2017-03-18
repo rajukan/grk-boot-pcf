@@ -1,0 +1,11 @@
+---
+applications:
+- name: grk-boot-pcf
+  memory: 512M
+  instances: 1
+  host: grk-boot-pcf-${random-word}
+  domain: cfapps.io
+  path: target/grk-boot-pcf-3.0.0-SNAPSHOT.jar
+  
+  env:
+    SPRING_PROFILES_DEFAULT: devCloud
